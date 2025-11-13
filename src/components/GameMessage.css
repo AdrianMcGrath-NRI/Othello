@@ -1,0 +1,32 @@
+.game-message {
+  margin: 20px auto;
+  padding: 20px 30px;
+  background: linear-gradient(135deg, #2d5f3f 0%, #1e4029 100%);
+  border: 2px solid #4a8a5f;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  animation: slideDown 0.4s ease;
+  max-width: 500px;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .game-message {
+    font-size: 1.2rem;
+    padding: 15px 20px;
+  }
+}
