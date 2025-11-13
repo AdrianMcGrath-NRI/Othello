@@ -1,0 +1,29 @@
+.board-wrapper {
+  perspective: 1000px;
+  margin: 20px auto;
+  display: inline-block;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 2px;
+  background-color: #000;
+  border: 12px solid #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 
+    0 8px 16px rgba(0, 0, 0, 0.5),
+    inset 0 2px 4px rgba(255, 255, 255, 0.1),
+    0 0 0 2px #333;
+  padding: 2px;
+  width: min(600px, 90vw);
+  height: min(600px, 90vw);
+}
+
+@media (max-width: 768px) {
+  .board {
+    width: min(450px, 90vw);
+    height: min(450px, 90vw);
+    border-width: 8px;
+  }
+}
